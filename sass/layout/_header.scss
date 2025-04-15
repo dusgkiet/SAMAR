@@ -1,0 +1,72 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .header-content {
+        display: flex;
+        justify-content: space-between; // đây là thuộc tính khoảng cách đều phần tử đầu cuối - sẽ dư khoảng cách ở giữa
+        align-items: center;
+
+        .nav-content {
+            display: flex;
+            align-items: center;
+
+            ul {
+                display: flex;
+                list-style: none;
+
+                li {
+                    padding: 55px 15px;
+
+                    a {
+                        text-decoration: none; // bỏ gạch chân
+                        color: black; // màu chữ
+                        font-family: "Roboto", sans-serif; // phông chữ
+                        font-size: 15px; // kích thuốc chữ
+                        font-weight: 500; // độ đậm nhạt
+                        display: inline-block;
+                        overflow: hidden;
+
+                        span {
+                            display: inline-block;
+                        }
+
+                        @keyframes uptodown {
+                            0% {
+                                transform: translateY(-100px);
+                                opacity: 0;
+                                color: black;
+                            }
+
+                            100% {
+                                color: $color-pink-theme;
+                                transform: translateY(0px);
+                                opacity: 1
+                            }
+                        }
+                    }
+
+                    a:hover span {
+                        animation: uptodown 0.3s forwards;
+                    }
+                }
+            }
+        }
+
+        i {
+            font-size: 9px;
+            margin-top: -5px;
+            vertical-align: middle;
+        }
+
+        .header-content-button {
+            margin: 0 20px;
+
+            button {
+                @include styleButtonCircle(20px, 35px);
+            }
+        }
+    }
+}
