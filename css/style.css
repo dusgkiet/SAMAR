@@ -50,23 +50,32 @@ footer .footer_content .footer_content_top {
   background-color: white;
   background-size: 100%;
   display: flex;
+  justify-content: space-between;
   position: relative;
 }
-footer .footer_content .footer_content_top h2 {
+footer .footer_content .footer_content_top .footer_content_top_text h2 {
   font-size: 28px;
   color: black;
+  position: relative;
 }
-footer .footer_content .footer_content_top::before {
-  content: "";
-  background-image: url("../img/pattern2.png");
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+footer .footer_content .footer_content_top .footer_content_top_from input {
+  padding: 20px 20px;
+  font-size: 15px;
+  font-weight: 400%;
+  color: #888;
+  background-color: white;
+  flex: 1 1 auto;
+}
+footer .footer_content .footer_content_top .footer_content_top_from button {
+  color: white;
+  padding: 25px 35px;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+  outline: none;
+  text-transform: uppercase;
+  line-height: 1.2;
+  cursor: pointer;
+  font-size: 20px;
 }
 footer .footer_copyright {
   background-color: #1f343b;
@@ -170,4 +179,20 @@ portfolio {
 
 service {
   background-image: url("../img/bg2.png");
+}
+
+.backToTop {
+  width: 50px;
+  height: 50px;
+  background: #f55f8d;
+  border-radius: 8px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  position: fixed;
+  color: white;
+  right: 15px;
+  bottom: 15px;
+  transition: all 0.2s;
+  box-shadow: -4px 4px 24px -10px #f55f8d;
 }/*# sourceMappingURL=style.css.map */

@@ -18,25 +18,45 @@ footer {
             background-color: white;
             background-size: 100%;
             display: flex;
+            justify-content: space-between;
             position: relative;
 
-            h2 {
-                font-size: 28px;
-                color: black;
+            .footer_content_top_text {
+                h2 {
+                    font-size: 28px;
+                    color: black;
+                    position: relative;
+                }
             }
 
-            &::before {
-                content: "";
-                background-image: url("../img/pattern2.png");
-                background-position: left top;
-                background-repeat: no-repeat;
-                background-size: contain;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
+            .footer_content_top_from {
+                input {
+                    padding: 20px 20px;
+                    font-size: 15px;
+                    font-weight: 400%;
+                    color: #888;
+                    background-color: white;
+                    flex: 1 1 auto;
+                }
+
+                button {
+                    @include styleButtonCircle(25px, 35px);
+                    font-size: 20px;
+                }
             }
+
+            // &::before {
+            //     content: "";
+            //     background-image: url("../img/pattern2.png");
+            //     background-position: left top;
+            //     background-repeat: no-repeat;
+            //     background-size: contain;
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     width: 100%;
+            //     height: 100%;
+            // }
         }
     }
 

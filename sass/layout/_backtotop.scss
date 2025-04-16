@@ -1,0 +1,17 @@
+.backToTop {
+    width: 50px;
+    height: 50px;
+    background: $color-pink-theme;
+    border-radius: 8px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    position: fixed;
+    color: white;
+    right: 15px;
+    bottom: 15px;
+    transition: all 0.2s;
+    box-shadow: -4px 4px 24px -10px $color-pink-theme;
+    // visibility: hidden;
+    // opacity: 0;
+}
