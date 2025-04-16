@@ -1,0 +1,69 @@
+footer {
+    background-image: url("../img/bg4.png");
+    display: block;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #0e1b1f;
+    background-size: contain;
+    color: white;
+    font-size: 15px;
+    position: relative;
+
+    .footer_content {
+        .footer_content_top {
+            padding: 50px 60px;
+            background-image: url("../img/pattern3.png");
+            background-color: white;
+            background-size: 100%;
+            display: flex;
+            position: relative;
+
+            h2 {
+                font-size: 28px;
+                color: black;
+            }
+
+            &::before {
+                content: "";
+                background-image: url("../img/pattern2.png");
+                background-position: left top;
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .footer_copyright {
+        background-color: #1f343b;
+        padding-inline-start: 10px;
+        position: relative;
+
+        .footer_copyright_title {
+            font-size: 15px;
+            font-family: "Roboto", sans-serif;
+            color: white;
+
+            span {
+                color: $color-pink-theme;
+            }
+        }
+
+        .footer_copyright_social {
+            display: flex;
+            justify-content: end;
+            gap: 5px;
+
+            a {
+                color: white;
+                border-radius: 50px;
+            }
+        }
+    }
+}

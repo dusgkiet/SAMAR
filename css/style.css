@@ -19,7 +19,80 @@ body {
   margin: 0 auto;
 }
 
+about {
+  background-image: url("../img/bg15.png");
+}
+
+blog {
+  background-image: url("../img/bg16.png");
+}
+
+features {
+  background-image: url("../img/bg2.png");
+}
+
+footer {
+  background-image: url("../img/bg4.png");
+  display: block;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #0e1b1f;
+  background-size: contain;
+  color: white;
+  font-size: 15px;
+  position: relative;
+}
+footer .footer_content .footer_content_top {
+  padding: 50px 60px;
+  background-image: url("../img/pattern3.png");
+  background-color: white;
+  background-size: 100%;
+  display: flex;
+  position: relative;
+}
+footer .footer_content .footer_content_top h2 {
+  font-size: 28px;
+  color: black;
+}
+footer .footer_content .footer_content_top::before {
+  content: "";
+  background-image: url("../img/pattern2.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+footer .footer_copyright {
+  background-color: #1f343b;
+  padding-inline-start: 10px;
+  position: relative;
+}
+footer .footer_copyright .footer_copyright_title {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+footer .footer_copyright .footer_copyright_title span {
+  color: #f55f8d;
+}
+footer .footer_copyright .footer_copyright_social {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+}
+footer .footer_copyright .footer_copyright_social a {
+  color: white;
+  border-radius: 50px;
+}
+
 header {
+  background-image: url("../img/pic2.png");
   position: absolute;
   top: 0;
   left: 0;
@@ -85,4 +158,16 @@ header .header-content .header-content-button button {
   text-transform: uppercase;
   line-height: 1.2;
   cursor: pointer;
+}
+
+number {
+  background-image: url("../img/bg14.png");
+}
+
+portfolio {
+  background-image: url("../img/bg17.png");
+}
+
+service {
+  background-image: url("../img/bg2.png");
 }/*# sourceMappingURL=style.css.map */
