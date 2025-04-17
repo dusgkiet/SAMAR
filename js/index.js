@@ -1,4 +1,4 @@
-// Sự kiện cho Service
+// Sự kiện cho Services
 const arrService = [
     {
         image: "./img/pic1_3.jpg",

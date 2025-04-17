@@ -1,3 +1,47 @@
-service {
+.services {
+    padding-top: 115px;
+    padding-bottom: 115px;
     background-image: url("../img/bg2.png");
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
+
+    .service_title {
+        p {
+            font-size: 22px;
+            font-weight: 600;
+            color: $color-pink-theme;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: $fs-h2;
+            line-height: 1.1;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+    }
+
+    .service_content {
+        display: grid;
+        grid-template-columns: (3, 1fr);
+        gap: 30px;
+        margin-top: 40px;
+
+        .service_content_item {
+            border: 3px solid transparent;
+            border-image: 100 round;
+            border-radius: 0.5rem;
+            background: white;
+            box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
+            padding: 30px 45px;
+            transform: translateY(0);
+            transition: all 0.5s;
+
+            &:hover {
+                transform: translateX(-20px);
+                background-image: url("./img/br.png");
+            }
+        }
+    }
 }
