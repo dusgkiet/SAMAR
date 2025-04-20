@@ -1,3 +1,72 @@
 .about {
     background-image: url("../img/bg15.png");
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding-bottom: 85px;
+
+    .about_content {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+
+        .about_content_left {
+            width: 60%;
+            position: absolute;
+            left: -17%;
+
+            img {
+                width: 100%;
+                border-radius: 0 100px 100px 0;
+            }
+        }
+
+        .about_content_right {
+            width: 50%;
+
+            .about_content_right_title {
+                p {
+                    font-weight: 600;
+                    font-size: 22px;
+                    margin-bottom: 15px;
+                    color: $color-pink-theme;
+                }
+
+                h2 {
+                    font-size: $fs-h2;
+                    line-height: 1.1;
+                    margin-bottom: 20px;
+                    font-weight: 800;
+                }
+            }
+
+            p {
+                margin-bottom: 15px;
+            }
+
+            ul {
+                margin-bottom: 30px;
+            }
+
+            li {
+                font-size: 16px;
+                list-style: none;
+
+                i {
+                    font-size: 24px;
+                    color: $color-pink-theme;
+                    margin-right: 10px;
+                    vertical-align: middle;
+                }
+            }
+
+
+
+            button {
+                @include styleButtonCircle(20px, 35px);
+            }
+        }
+    }
 }

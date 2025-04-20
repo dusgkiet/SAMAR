@@ -1,3 +1,49 @@
 .features {
     background-image: url("../img/bg2.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    overflow: hidden;
+    padding-top: 115px;
+
+    .features_content {
+        display: flex;
+
+        .features_content_left {
+            .features_content_left_title {
+                p {
+                    font-size: 22px;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                    color: $color-pink-theme;
+                }
+
+                h2 {
+                    font-size: $fs-h2;
+                    line-height: 1.1;
+                    font-weight: 800;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .features_content_left_group {
+                .features__bg {
+                    display: flex;
+                }
+            }
+        }
+
+        .features_content_right {
+            width: 50%;
+
+            .features_content_right_image {
+                margin-right: -80px;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
 }
